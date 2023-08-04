@@ -1,0 +1,330 @@
+.rounded-box {
+    border-radius: 50%; 
+    width: 50px; 
+    height: 50px; 
+    background-color: #e7d0a4; 
+    display: none;
+    justify-content:space-evenly;
+    align-items: center;
+    position: relative;
+    bottom: 5px;
+  }
+
+  .log{
+    position: relative;
+    top: 50px;
+    left: 61px;
+}
+  
+.log:hover{
+    cursor: pointer;
+}
+@media (max-width:400px){
+    .log{
+        top:55px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+    padding: 1%;
+        font-family: 'Open Sans', sans-serif;
+    
+}
+#username{
+    font-size: 2.5rem;
+    text-align: center;
+    position: relative;
+    color: #3ac6ba;
+    top: 6px;
+
+}
+.navbar{
+    margin: 2% 0 5% ;
+    position: fixed;
+}
+
+.active{
+    font-weight: bolder;
+}
+
+.jumbotron {
+    
+    background-size:contain;
+    background-repeat: repeat;
+    background-position: center center;
+    font-size: x-large;
+    color: #eaece4;
+    padding: 200px 240px 232px;
+    top: 175px;
+    bottom: 520px;
+  }
+
+.title-image{
+    width: 75%;
+    
+}
+.steps-heading{
+    text-align: center;
+    padding: 8px 0px 58px;
+    font-size: 3.5rem;
+}
+
+.icon{
+    color: #000;
+    margin-bottom: 1rem;
+    padding:10px 5px 0px 0px;
+}
+
+
+.fas{
+    width: 6%;
+}
+
+.step1{
+    padding-bottom: 3%;
+    padding-right: 30%;
+}
+
+.adoptlove{
+    background-color: orange ;
+    text-align: center;
+}
+
+.title-image2{
+    width: 40%;
+    text-align: center;
+    position: absolute;
+    left: 30%;
+    top: 15%;
+}
+
+.adop{
+    text-align: left;
+    top: 30%;
+    padding-top: 70px;
+    right: 50px;
+}
+
+.adopt-heading{
+    text-align: center;
+    /* padding: 18px 0px 8px; */
+    font-size: 1.5rem;
+}
+
+.btn{
+    padding: 2px 15px;
+    width: 200px;
+    height: 45px;
+    margin: 20px;
+    text-align: center;
+
+}
+
+#features{
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.icon41{
+    color: #3ac6ba;
+    margin-bottom: 1rem;
+    padding:10px 5px 0px 0px;
+}
+
+.icon42{
+    color: #3ac6ba;
+    margin-bottom: 1rem;
+    padding:10px 5px 0px 0px;
+}
+
+.icon43{
+    color: #3ac6ba;
+    margin-bottom: 1rem;
+    padding:10px 5px 0px 0px;
+}
+
+
+.icon41:hover{
+    color: #e20a27;
+}
+.icon42:hover{
+    color: orange;
+}
+.icon43:hover{
+    color: #d4e1e0;
+}
+
+.icon5{
+    color: #000;
+}
+.icon5:hover{
+    color: #000;
+}
+
+#testimonials{
+    color:#fff ;
+    text-align: center;
+    background-color: #ef8172;
+}
+h2{
+    font-family: "Montserrat-Black";
+    font-size: 1.5rem;
+    line-height: 1;
+}
+.test-dog{
+    border-radius: 100%;
+    width: 200px;
+    padding: 20px ;
+}
+.carousel-inner{
+    padding: 2% 8%;
+}
+
+#footer{
+    text-align: center;
+    height: 50px;
+    margin: 2% 0 2% 0 ;
+}
+
+.icon{
+    color: #000;
+    margin-bottom: .5rem;
+    padding:10px 10px 0px 10px;
+}
+.icontwit:hover{
+    color:#1DA1F2
+    ;
+}
+.iconface:hover{
+    color:#4267B2
+    ;
+}
+.iconinsta:hover{
+    color:#FFC0CB
+    ;
+}
+.iconenv:hover{
+    color:#F4B400
+    ;
+}
+
+
+
+@media (min-width:767px) and (max-width: 992px){
+ 
+.title-image2{
+    text-align: center;
+    position: absolute;
+position:static;
+width: 90%;
+
+}
+.step1 , .icon {
+    text-align: center;
+    padding-right:0 ;
+}
+.title-image{
+position: relative;
+left: 60px;
+margin-bottom:90px ;}
+
+}
+
+
+
+@media (min-width:467px) and (max-width: 766px){
+    .adop{
+    text-align: center;
+   position: relative;
+    left: 0.5px;
+}
+.title-image2{
+    text-align: center;
+    position: absolute;
+
+
+position:static;
+width: 50%;
+
+}
+.step1 , .icon {
+    text-align: center;
+    padding-right:0 ;
+}
+.title-image{
+position: relative;
+left: 60px;
+margin-bottom:90px ;}
+
+}
+
+
+
+
+@media (max-width: 466px){
+
+    .navbar{
+        margin: 1% 0 2% ;
+        position: absolute;
+    }
+    .navbar-brand{
+        width: 10%;
+    }
+    .jumbotron {
+    
+    background-size:contain;
+    background-repeat: repeat;
+    background-position: center center;
+    font-size: x-large;
+    color: #eaece4;
+    padding: 100px 180px 100px;
+    top: 175px;
+    bottom: 520px;
+  }
+  .steps-heading{
+    font-size: 2rem;
+  }
+ 
+    .adop{
+    text-align: center;
+   position: relative;
+    left: 0.5px;
+}
+.title-image2{
+    text-align: center;
+    /* position: absolute; */
+    position:static;
+width: 50%;
+left: 170px;
+}
+.step1 , .icon {
+    text-align: center;
+    padding-right:0 ;
+}
+.title-image{
+position: relative;
+left: 60px;
+}
+
+}
