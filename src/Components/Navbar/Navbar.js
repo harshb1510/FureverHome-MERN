@@ -8,7 +8,6 @@ const Navbar = () => {
     <div>
       <div className="topbarContainer">
       <div className="topbarLeft">
-       {/* <img src="/FH.jpg" alt="" className='logo'/> */}
        <img src="/re2.png" alt="" />
       </div>
       <div className="topbarCenter">
