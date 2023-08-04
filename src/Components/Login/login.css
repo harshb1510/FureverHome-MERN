@@ -1,0 +1,41 @@
+.loginWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  width: 100%;
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.login-leftImg {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+.login-right {
+  display: grid;
+  place-items: center;
+}
+.loginTitle{
+    position: relative;
+}
+form{
+    width: 130px;
+}
+.loginEmail{
+    padding: 10px;
+}
+.loginPassword{
+    padding: 10px;
+}
+.loginButton{
+    padding: 10px;
+    margin: auto;
+}
+
