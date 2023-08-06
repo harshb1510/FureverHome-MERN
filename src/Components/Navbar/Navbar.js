@@ -1,6 +1,6 @@
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import SearchIcon from '@mui/icons-material/Search';
-import {Link} from 'react-router-dom';
+// import SearchIcon from '@mui/icons-material/Search';
+// import {Link} from 'react-router-dom';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import "./navbar.css";
 const Navbar = () => {
@@ -12,20 +12,18 @@ const Navbar = () => {
       </div>
       <div className="topbarCenter">
         <div className="searchbar">
-          <SearchIcon className="searchIcon" />
-          <input
-            placeholder="Search for our products,services and more"
-            className="searchInput"
-          />
+        <form class="search-box">
+      <input type="text" placeholder=" "/>
+       <button type="reset"></button>
+       </form>
         </div>
       </div>
       <div className="topbarRight">
         <div className="topbarLinks">
-          <span className="topbarLink">Home</span>
           <span className="topbarLink">About</span>
-          <span className="topbarLink">About</span>
-          <span className="topbarLink">About</span>
-          <span className="topbarLink">About</span>
+          <span className="topbarLink">Report</span>
+          <span className="topbarLink">Register</span>
+          <span className="topbarLink">Login</span>
 
         </div>
         <div className="topbarIcons">

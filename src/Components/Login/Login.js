@@ -2,32 +2,25 @@ import "./login.css";
 
 const Login = () => {
   return (
-    <div className="loginWrapper">
-      <div className="login-container">
-        <div className="login-left">
-          <img src="/login.jpg.webp" alt="" className="login-leftImg" />
-        </div>
-        <div className="login-right">
-          <div className="loginTitle">
-            <h2>Login</h2>
-          </div>
-          <form>
-          
-            <div className="loginEmail">
-              <span>Email</span>
-              <input placeholder="Email" />
-            </div>
-            <div className="loginPassword">
-              <span>Password</span>
-              <input placeholder="Password" />
-            </div>
-            <div className="loginButton">
-              <button>Login</button>
-            </div>
-          </form>
-        </div>
+    
+    <div class="login-box">
+    <h2>Login</h2>
+    <form>
+      <div class="user-box">
+        <input type="text" name="" required="true"/>
+        <label>Username</label>
       </div>
-    </div>
+      <div class="user-box">
+        <input type="password" name="" required=""/>
+        <label>Password</label>
+      </div>
+      <a href="#">
+        
+        Submit
+      </a>
+    </form>
+  </div>
+
   );
 };
 

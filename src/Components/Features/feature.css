@@ -1,0 +1,45 @@
+.featureContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.featureLeft {
+    display: grid;
+    place-items: center;
+    padding: 35px;
+}
+.featureCenter {
+    display: grid;
+    place-items: center;
+    padding: 20px;
+}
+.featureRight {
+    display: grid;
+    place-items: center;
+    padding: 20px;
+}
+.featureHeading{
+    text-align: center;
+    padding-bottom: 3px;
+}
+.featureIcon1,.featureIcon2,.featureIcon3{
+    width: 100px !important;
+    height: 60px !important;
+    color: rgb(19, 193, 149);
+}
+.featureIcon1:hover{
+    transform: scale(1.1);
+    color: rgb(252, 59, 59);
+}
+.featureIcon2:hover{
+    transform: scale(1.1) ;
+    color:rgb(67, 67, 215);
+}
+.featureIcon3:hover{
+    transform: scale(1.1);
+    color: rgb(162, 153, 153);
+}
+.featureTitle{
+    font-weight: 600;
+    padding-bottom: 3px;
+}

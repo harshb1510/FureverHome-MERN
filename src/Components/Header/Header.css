@@ -1,0 +1,80 @@
+.value {
+  margin: 25px;
+  margin-top: 65px;
+}
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  text-align: center;
+  margin: 35px 0px -70px 0px;
+}
+
+.valueContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 77px 81px 0px;
+}
+.valueLeft {  
+  flex: 7;
+}
+.valueLeft > :nth-child(1) {
+  width: 75%;
+}
+.valueRight {
+  flex: 5;
+  height: 407px;
+  padding-top: 30px;
+}
+.accordion {
+  border: 0 solid rgba(0, 0, 0, 0.1) !important;
+}
+.accordionButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.accordionItem {
+  background: white;
+  border: 3px double rgba(0, 0, 0, 0.143);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+.accordionButton {
+  padding: 11px;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.icon {
+  padding: 10px;
+  border-radius: 5px;
+  width: 44px;
+  margin-bottom: -7px;
+  font-weight: 800;
+}
+.icon svg {
+  fill: black;
+  width: 44px;
+  height: 31px;
+}
+.primaryText {
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+  transition: all 300ms ease-in-out;
+}
+.primaryText:hover {
+  transform: scale(1.1);
+}
+.secondaryText {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+.accordianPanel {
+  text-align: center;
+}
