@@ -1,39 +1,19 @@
-import "./App.css";
-import Header from "./Components/Header/Header";
-import Navbar from "./Components/Navbar/Navbar";
-import Carousel from "./Components/Carousel/Carousel";
-// import Login from "./Components/Login/Login";
-import Facts from "./Components/Facts/Facts";
-import Feature from "./Components/Features/Feature";
-import Contact from "./Components/Contact/Contact"
+import './App.css';
+import Home from './Components/Home.js';
 
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Login from './Components/Login/Login';
+import Signup from './Components/Signup/Signup'; 
 
 function App() {
   return (
-    <>
-      <div>
-        <Navbar />
-      </div>
-      <div>
-        <Carousel />
-      </div>
-      <div>
-        <Header />
-      </div>
-      {/* <div>
-         <Login/> 
-      </div> */}
-      <div>
-        <Facts/>
-      </div>
-      <div>
-        <Feature />
-      </div>
-        <div>
-        <Contact/>
-        </div>
-    
-    </>
+   <Router>
+    <Routes>
+    <Route exact path='/' element={<Home/>}/>
+    <Route exact path="/login" element={<Login />} />
+    <Route exact path="/createuser" element={<Signup />} />
+    </Routes>
+   </Router>
   );
 }
 

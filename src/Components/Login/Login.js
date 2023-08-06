@@ -53,7 +53,7 @@ const Login = () => {
 
   return (
     <>
-          <div className="mt-5 contaer">
+          <div className="mt-5 container">
           <form onSubmit={handleSubmit}>
           <div>
             <label htmlFor="exampleInputEmail1" className="form-label">

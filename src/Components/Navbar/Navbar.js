@@ -1,9 +1,13 @@
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { Link, useNavigate } from "react-router-dom";
+
 // import SearchIcon from '@mui/icons-material/Search';
 // import {Link} from 'react-router-dom';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import "./navbar.css";
 const Navbar = () => {
+  const navigate = useNavigate();
+
   return (
     <div>
       <div className="topbarContainer">
@@ -23,7 +27,9 @@ const Navbar = () => {
           <span className="topbarLink">About</span>
           <span className="topbarLink">Report</span>
           <span className="topbarLink">Register</span>
-          <span className="topbarLink">Login</span>
+          <span className="topbarLink "><Link  to="/login" >
+                  Login
+                </Link></span>
 
         </div>
         <div className="topbarIcons">
