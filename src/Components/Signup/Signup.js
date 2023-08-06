@@ -1,25 +1,28 @@
-import React,{useState} from 'react'
-import { Link , useNavigate } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 
-
-const Login = () => {
+const Signup = () => {
+    const navigate = useNavigate();
   const [credentials, setcredentials] = useState({
+    name: "",
     email: "",
     password: "",
   });
 
-  let navigate = useNavigate();
   const handleSubmit = async (e) => {
   e.preventDefault();
 
   try {
-    const response = await fetch("http://localhost:5000/api/auth/login", {
+    const response = await fetch("http://localhost:5000/api/auth/createuser", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
+        name: credentials.name,
         email: credentials.email,
         password: credentials.password,
       }),
@@ -28,16 +31,11 @@ const Login = () => {
     const json = await response.json();
     console.log(json);
 
-    if (!json.success) {
-      alert("Enter Valid Credentials");
-    }
     if (json.success) {
-      localStorage.setItem("userEmail",credentials.email);
-      localStorage.setItem("authToken",json.authToken);
-      console.log(localStorage.getItem("authToken"));
-      navigate("/");
-
-    }
+        navigate("/login");
+      } else {
+        alert("Enter Valid Credentials");
+      }
   } catch (error) {
     console.error("Error during fetch:", error);
   }
@@ -53,9 +51,23 @@ const Login = () => {
 
   return (
     <>
-          <div className="mt-5 contaer">
-          <form onSubmit={handleSubmit}>
-          <div>
+      <div className="container">
+        <form onSubmit={handleSubmit}>
+          <div className="mb-3">
+            <label htmlFor="exampleInputName" className="form-label">
+              Name
+            </label>
+            <input
+              type="text"
+              className="form-control"
+              id="exampleInputName1"
+              aria-describedby="emailHelp"
+              name="name"
+              value={credentials.name}
+              onChange={onChange}
+            />
+          </div>
+          <div className="mb-3">
             <label htmlFor="exampleInputEmail1" className="form-label">
               Email address
             </label>
@@ -69,6 +81,9 @@ const Login = () => {
               onChange={onChange}
 
             />
+            <div id="emailHelp" className="form-text">
+              We'll never share your email with anyone else.
+            </div>
           </div>
           <div className="mb-3">
             <label htmlFor="exampleInputPassword1" className="form-label">
@@ -83,17 +98,17 @@ const Login = () => {
               onChange={onChange}
 
             />
-          </div>
+          </div>         
           <button type="submit" className="mb-3 btn btn-success">
             Submit
           </button>
-          <Link to="/createuser" className="mb-3 ms-5 btn btn-danger">
-            I'm a new user
+          <Link to="/login" className="mb-3 ms-5 btn btn-danger">
+            Already a user
           </Link>
         </form>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Login
+export default Signup;
