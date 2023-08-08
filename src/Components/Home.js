@@ -5,6 +5,7 @@ import Carousel from "../Components/Carousel/Carousel";
 import Facts from "../Components/Facts/Facts";
 import Feature from "../Components/Features/Feature";
 import Contact from "../Components/Contact/Contact"
+import Testimonials from './Testimonials/Testimonials';
 const Home = () => {
   return (
     <>
@@ -22,6 +23,9 @@ const Home = () => {
       </div>
       <div>
         <Feature />
+      </div>
+      <div >
+        <Testimonials/>
       </div>
         <div>
         <Contact/>

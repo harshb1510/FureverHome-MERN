@@ -27,7 +27,7 @@ const Navbar = () => {
           <span className="topbarLink">About</span>
           <span className="topbarLink">Report</span>
           <span className="topbarLink">Register</span>
-          <span className="topbarLink "><Link  to="/login" >
+          <span className="topbarLink " ><Link  to="/login" className='a'>
                   Login
                 </Link></span>
 
