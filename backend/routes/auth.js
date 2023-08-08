@@ -6,6 +6,7 @@ const bcrypt = require ("bcryptjs");
 const jwt = require("jsonwebtoken");
 var fetchuser = require("../middleware/fetchuser");
 
+
 const JWT_SECRET = "ThisIsVeryStrongPass!@#";
 
 
@@ -49,7 +50,13 @@ router.post(
     }
     const authtoken = jwt.sign(data,JWT_SECRET);
 
-   return res.json({success:true , authtoken:authtoken});
+   return res.json({success:true , authtoken:authtoken });
+   if(success) {
+   return res.redirect('http://localhost:3000/login');
+   }
+   else{
+   return res.redirect('http://localhost:3000/signup');
+   }
 } catch (error) {
     console.error(error.message);
     res.status(500).send("Some error occured");
@@ -86,12 +93,17 @@ router.post('/login', [
   
       const data = {
         user:{
-          id: user.id
+          id: user.id,
         }
       }
+      const name = {
+        user:{
+          name: user.name,
+        }
+      }
+
       const authtoken = jwt.sign(data, JWT_SECRET);
-      return res.json({success:true , authtoken:authtoken});
-  
+      return res.json({success:true , authtoken:authtoken , name:user.name});
     } catch (error) {
       console.error(error.message);
       res.status(500).send("Internal Server Error");

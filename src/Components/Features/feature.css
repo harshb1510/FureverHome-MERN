@@ -7,16 +7,22 @@
     display: grid;
     place-items: center;
     padding: 35px;
+    padding-left: 65px;
 }
 .featureCenter {
     display: grid;
     place-items: center;
     padding: 20px;
+    padding-left: 65px;
+
 }
 .featureRight {
     display: grid;
     place-items: center;
     padding: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+
 }
 .featureHeading{
     text-align: center;

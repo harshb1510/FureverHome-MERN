@@ -18,7 +18,11 @@ const Facts = () => {
             strays.
           </p>
         </span>
-        <button className="adoptButton">Adopt Love</button>
+        <button
+        type="button"
+        class="btn btn-outline-light btn-sm"      >
+        <h2 class="adopt-heading">AdoptLove</h2>
+      </button>
       </div>
     </div>
   );
