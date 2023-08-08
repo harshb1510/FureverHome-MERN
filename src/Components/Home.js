@@ -30,6 +30,7 @@ const Home = () => {
         <div>
         <Contact/>
         </div>
+       
 
     </>
   )

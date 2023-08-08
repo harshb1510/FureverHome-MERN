@@ -8,6 +8,8 @@
 border-radius: 20px;
 /* width: 1250px; */
 /* height: 258px; */
+/* width: 1250px;
+height: 258px; */
 }
 .factsLeft{
     flex: 5;
@@ -19,7 +21,20 @@ border-radius: 20px;
     width: 60%;
     margin-left:82px;   
 }
+.btn{
+    padding: 2px 15px;
+    width: 140px;
+    height: 32px;
+    margin: 20px;
+    text-align: center;
 
+}
+
+.adopt-heading{
+    text-align: center;
+    /* padding: 18px 0px 8px; */
+    font-size: 1.2rem;
+}
 
 .heading{
     font-size: 45px;

@@ -26,7 +26,7 @@
 	font-size: 15px;
 	font-weight: 300;
 }
-.container 
+.hcontainer 
 {
 	width: 100%;
 	display: flex;
@@ -35,14 +35,14 @@
 	gap: 50px;
 	margin-top: 30px;
 }
-.container .contactInfo 
+.hcontainer .contactInfo 
 {
 	width: 50%;
 	display: flex;
 	flex-direction: column;
     padding-left: 60px;
 }
-.container .contactInfo .box 
+.hcontainer .contactInfo .box 
 {
 	position: relative;
 	padding: 3px 0;
@@ -50,7 +50,7 @@
 	cursor: pointer;
     padding-left: 40px;
 }
-.container .contactInfo .box .icon 
+.hcontainer .contactInfo .box .icon 
 {
 	/* min-width: 60px; */
 	height: 37px;
@@ -61,7 +61,7 @@
 	font-size: 10px;
 	transition: 0.5s;
 }
-.container .contactInfo .box .text 
+.hcontainer .contactInfo .box .text 
 {
 	display: flex;
 	flex-direction: column;
@@ -70,14 +70,14 @@
 	color: black;
 	font-weight: 300;
 }
-.container .contactInfo .box .text h3 
+.hcontainer .contactInfo .box .text h3 
 {
 	font-weight: 500;
 	color: #00bcd4;
     font-size: 23px;
     padding-top: 10px;
 }
-.container .contactInfo .txt
+.hcontainer .contactInfo .txt
 {
 	color: black;
 	/* margin-top: 50px; */
@@ -105,7 +105,7 @@
 }
 
 
-.container .contactForm
+.hcontainer .contactForm
 {
 	position: relative;
 	width: 28%;
@@ -113,18 +113,18 @@
 	min-height: 100px;
 	padding: 17px;
 } 
-.container .contactForm h2 
+.hcontainer .contactForm h2 
 {
 	font-size: 28px;
 	color: #333;
 	font-weight: 500;
 }
-.container .contactForm .inputBox 
+.hcontainer .contactForm .inputBox 
 {
 	position: relative;
 	margin-top: 11px;
 }
-.container .contactForm .inputBox input, .container .contactForm .inputBox textarea {
+.hcontainer .contactForm .inputBox input, .hcontainer .contactForm .inputBox textarea {
     width: 96%;
     padding: 5px 0;
     font-size: 1.1em;
@@ -134,7 +134,7 @@
     outline: none;
     resize: none;
 }
-.container .contactForm .inputBox span 
+.hcontainer .contactForm .inputBox span 
 {
 	position: absolute;
 	left: 0;
@@ -145,16 +145,16 @@
 	color: #666;
 	transition: 0.5s;
 }
-.container .contactForm .inputBox input:focus ~ span, 
-.container .contactForm .inputBox textarea:focus ~ span,
-.container .contactForm .inputBox input:valid ~ span, 
-.container .contactForm .inputBox textarea:valid ~ span 
+.hcontainer .contactForm .inputBox input:focus ~ span, 
+.hcontainer .contactForm .inputBox textarea:focus ~ span,
+.hcontainer .contactForm .inputBox input:valid ~ span, 
+.hcontainer .contactForm .inputBox textarea:valid ~ span 
 {
 	color: #e91e63;
 	font-size: 0.9em;
 	transform: translateY(-20px);
 }
-.container .contactForm .inputBox input[type="submit"]
+.hcontainer .contactForm .inputBox input[type="submit"]
 {
 	width: 100px;
 	background: #00bcd4;

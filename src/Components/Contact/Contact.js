@@ -9,7 +9,7 @@ const Contact = () => {
         <h2>Contact Us</h2>
         <p></p>
     </div>
-    <div className="container">
+    <div className="hcontainer">
         <div className="contactInfo">
             <div className="box">
                
@@ -24,14 +24,15 @@ const Contact = () => {
                <PhoneIcon className="icon2"/>
                 <div className="text">
                     <h3>Phone</h3>
-                    <p>9518620127</p>
+                    <p>+91 9350728474 , +91 9252908070</p>
+                    
                 </div>
             </div>
             <div className="box">
                 <EmailIcon className="icon3"/>
                 <div className="text">
                     <h3>Email</h3>
-                    <p>furever2U@gmail.com</p>
+                    <p>fureverhome@gmail.com</p>
                 </div>
             </div>
             <ul className="sci">
@@ -54,7 +55,7 @@ const Contact = () => {
                     <span>Email</span>
                 </div>
                 <div className="inputBox">
-                    <textarea required="required"></textarea>
+                    <input type="text" name="" required="required"/>
                     <span>Type your Message...</span>
                 </div>
                 <div className="inputBox">

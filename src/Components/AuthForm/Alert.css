@@ -1,0 +1,38 @@
+.alert {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    font-size:.9375em!important;
+    text-align: center;
+  }
+  
+  .alert-primary {
+    color: #004085;
+    background-color: #cce5ff;
+    border-color: #b8daff;
+  }
+  
+  .alert-dismissible {
+    position: relative;
+  }
+  
+  .alert-dismissible .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .fade {
+    opacity: 1;
+    transition: opacity 0.15s linear;
+  }
+  
+  .show {
+    display: block !important;
+    opacity: 1 !important;
+  }
+  
