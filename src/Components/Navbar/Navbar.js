@@ -32,13 +32,26 @@ const Navbar = () => {
       {!localStorage.getItem("authToken") ? (
         <div className="topbarRight">
         <div className="topbarLinks">
-          <span className="topbarLink">About</span>
-          <span className="topbarLink">Report</span>
-          <span className="topbarLink">Register</span>
-          <span className="topbarLink "><Link  to="/login" >
-                  Login
-                </Link></span>
 
+          <span className="topbarLink mx-3">About</span>
+          <span className="topbarLink mx-3">Report</span>
+          <span className="topbarLink mx-3">Register</span>
+          <span className="topbarLink mx-3 "><Link  to="/login" >
+          Login
+          </Link></span>
+        </div>
+        <div className="topbarIcons mx-3">
+        </div>
+      </div>
+              ) : (
+                <div className="topbarRight">
+        <div className="topbarLinks">
+          <span className="topbarLink mx-3">About</span>
+          <span className="topbarLink mx-3">Report</span>
+          <span className="topbarLink mx-3">Register</span>
+          <span className="topbarLink mx-3 " onClick={handleLogout}>
+          Logout
+          </span>
         </div>
         <div className="topbarIcons mx-3">
           <div className="topbarIconItem1 mx-3">
