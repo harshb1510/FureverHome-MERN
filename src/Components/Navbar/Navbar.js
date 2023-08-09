@@ -23,7 +23,7 @@ const Navbar = () => {
       </div>
       <div className="topbarCenter">
         <div className="searchbar">
-        <form class="search-box">
+        <form className="search-box">
       <input type="text" placeholder=" "/>
        <button type="reset"></button>
        </form>
@@ -57,9 +57,9 @@ const Navbar = () => {
           <div className="topbarIconItem1 mx-3">
             <ShoppingCartIcon></ShoppingCartIcon>
           </div>
-          <div class="topbarIconItem mx-3">
-  <div class="userIcon">
-    <span class="userInitial">{localStorage.getItem("name").charAt(0)}</span>
+          <div className="topbarIconItem mx-3">
+  <div className="userIcon">
+    <span className="userInitial">{localStorage.getItem("name").charAt(0)}</span>
   </div>
 </div>
 

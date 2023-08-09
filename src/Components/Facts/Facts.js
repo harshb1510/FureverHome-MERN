@@ -20,8 +20,8 @@ const Facts = () => {
         </span>
         <button
         type="button"
-        class="btn btn-outline-light btn-sm"      >
-        <h2 class="adopt-heading">AdoptLove</h2>
+        className="btn btn-outline-light btn-sm"      >
+        <h2 className="adopt-heading">AdoptLove</h2>
       </button>
       </div>
     </div>

@@ -17,7 +17,7 @@ const AuthForm = (props) => {
     e.preventDefault();
   
     try {
-        const response = await fetch("http://localhost:5000/api/auth/login", {
+        const response = await fetch("http://localhost:8080/api/auth/login", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -75,15 +75,15 @@ const AuthForm = (props) => {
         <form  className="foram">
           <h1 className="hone">Create Account</h1>
           <button className="boxx">
-            <div class="google-btn">
-              <div class="google-icon-wrapper">
+            <div className="google-btn">
+              <div className="google-icon-wrapper">
                 <img
                   className="google-icon"
                   src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
                   alt=""
                 />
               </div>
-              <p class="btn-text">
+              <p className="btn-text">
                 <b>Sign in with google</b>
               </p>
             </div>
